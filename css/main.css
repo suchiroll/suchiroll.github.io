@@ -1,30 +1,53 @@
-.container-fluid{
-    min-height: 500px;
-    max-height: 100%;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    max-width: 100%;
-}
 
-.h1{
-    font-family: 'Raleway', sans-serif;
+html, body { height: 100%; margin: 0; padding: 0; }
+nav{
+	text-align: center-left;
+	color: gray;
+}
+#name{
+	padding-top:10px;
+}
+  #s1{
+	padding-top:50px;
+	height: 100%;
+	overflow: hidden;
+	color: #fff; 
+	background-color: #468966;
+	background-image: url("s1.jpg");
+	background-position:center;
+	background-repeat:no-repeat;
+	position: relative;
+  }
+ 
+ #box1{
+	 
+ }
 
-}
-.header{
-    min-height: 500px;
-    background-color: #1abc9c;
-}
-.bg-1{
-    background-color: #1abc9c;
-    color: #ffffff;
-}
+ 
+ #i1{
+	position: absolute; 
 
-.bg-2{
-    background-color: #3366cc;
-    color: #ffffff;
-}
+ }
+ 
+ #i2{
+	 position:absolute;
+ }
+ #i2a{
+	 padding-top:200px;
+	 padding-left:350px;
+	 position:absolute;
+ }
+  #i1a{
+	 padding-top:345px;
+	 padding-left:150px;
+	 position:absolute;
+ }
+ #i3{
+	 position:absolute;
+	
+ }
+ 
+ 
+ #s3 {padding-top:50px;height:100%;color: #fff; background-color: #b4ccd7;}
+ #s2 {padding-top:50px;height:100%;color: #fff; background-color: #efefef;}
 
-.bg-3{
-    background-color: #993399;
-    color: #ffffff;
-}
