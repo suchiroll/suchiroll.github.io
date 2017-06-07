@@ -1,5 +1,5 @@
 
-nav{
+.nav{
 	text-align: center-left;
 	color: gray;
 }
@@ -16,7 +16,7 @@ body,html{
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
-/*
+
 h1{
 	position: relative;
 	top: 45%;
@@ -40,10 +40,10 @@ h2{
 	font-size: 900%;
 	font-family: 'Pacifico', cursive;
 }
-*/
+
 #s1{
 	background-color: #ffffff;
-	background-image: url("images/s1.jpg");
+	background-image: url("s1.jpg");
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -52,10 +52,10 @@ h2{
 }
 
 
-#s2{
+.bg2{
 	background-color: #474e5d;
 }
 
-#s3{
+.bg3{
 	background-color: #1abc9c;
 }
