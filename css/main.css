@@ -1,12 +1,12 @@
 
 .nav{
 	text-align: center-left;
-	color: gray;
+	color: #cccccc;
 }
 #name{
 	padding-top:10px;
-	color:#cccccc;
-	font-family: 'Open Sans', sans-serif;
+	color: #cccccc;
+	font-family: 'Open-Sans', sans-serif;
 }
 
 body,html{
