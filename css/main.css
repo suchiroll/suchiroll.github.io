@@ -12,7 +12,7 @@ body,html{
 	margin:0;
 }
 
-container-fluid{
+.container-fluid{
 	padding-top: 70px;
 	padding-bottom: 70px;
 }
@@ -41,7 +41,7 @@ h2{
 	font-family: 'Pacifico', cursive;
 }
 */
-s1{
+#s1{
 	background-color: #ffffff;
 	background-image: url("images/s1.jpg");
 	height: 100%;
@@ -52,10 +52,10 @@ s1{
 }
 
 
-bg2{
+#s2{
 	background-color: #474e5d;
 }
 
-bg3{
+#s3{
 	background-color: #1abc9c;
 }
