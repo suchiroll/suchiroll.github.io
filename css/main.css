@@ -5,7 +5,7 @@
 }
 #name{
 	padding-top:10px;
-	color: #cccccc;
+	color:#cccccc;
 	font-family: 'Open-Sans', sans-serif;
 }
 
@@ -23,7 +23,11 @@ h1{
 	position: relative;
 	top: 45%;
 	transform: translateY(-45%);
+	
+}
 
+h1:hover{
+	color:#ffa31a;
 }
 
 h2{
@@ -41,6 +45,16 @@ h2{
 	color: a6a6a6;
 	font-size: 900%;
 	font-family: 'Pacifico', cursive;
+
+}
+
+@-webkit-keyframes color{
+	from{background-color: black;}
+	to{background-color:yellow;}
+}
+@keyframes color{
+	from{background-color: black;}
+	to{background-color: yellow;}
 }
 
 #s1{
