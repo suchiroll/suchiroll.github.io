@@ -19,21 +19,31 @@ body,html{
 
 h1{
 	position: relative;
-	top: 60%;
-	transform: translateY(-60%);
-	font-family: 'Open Sans', sans-serif;
+	top: 45%;
+	transform: translateY(-45%);
 
+}
+
+h2{
+	position: relative;
+	top: 30%;
+	transform: translateY(-30%);
+}
+
+.subline{
+	font-size: 250%;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .welcome{
-	color: #ffffff;
-	font-size: 40%;
+	color: a6a6a6;
+	font-size: 900%;
+	font-family: 'Pacifico', cursive;
 }
 
 #s1{
-	font-size: 20vmax;
 	background-color: #ffffff;
-	background-image: url("s1.jpg");
+	background-image: url("css/s1.jpg");
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
