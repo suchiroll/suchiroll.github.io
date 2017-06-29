@@ -6,12 +6,12 @@
 }
 
 
-.nav{
+.navbar{
+	min-height: 20px !important;
 	text-align: center-left;
 	color: #cccccc;
 }
 #name{
-	padding-top:10px;
 	color:#cccccc;
 	font-family: 'Open-Sans', sans-serif;
 }
@@ -52,20 +52,49 @@ h1:hover{
 #s1{
 	background-color: #ffffff;
 	background-image: url("s1.jpg");
-	height: 600px;
+	height: 700px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	
 }
 
-
+.white{
+	color: #fff;
+}
 .bg2{
-	background-color: #474e5d;
+	background-color: #5E8C6A;
+}
+
+.bg3{
+	background-image: url("experience.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .bg4{
-	background-color: #1abc9c;
+	background-color: #F14D4C;
+}
+.bg5{
+	background-image: url("skills.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg6{
+	background-color:#F2C45A ;
+}
+
+.bg7{
+	background-image: url("projects.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg8{
+	background-color: #88A65E;
 }
 
 .content{
@@ -116,8 +145,8 @@ h1:hover{
 }
 
 @media only screen and (max-width: 600px){
-		#s1{
-		height: 600px;
+	#s1{
+		height: 500px;
 
 	}
 
@@ -127,13 +156,14 @@ h1:hover{
 	}
 
 	.subline{
-		line-height: 420px;
+		padding-top: 200px;
+		line-height: 25px;
 		font-size: 25px;
 
 }
 
 .content-title{
-	padding-top: 5px;
+	padding-top: 0px;
 	font-size: 50px;
 }
 
