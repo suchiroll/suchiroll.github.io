@@ -149,6 +149,11 @@ button{
 	text-transform: lowercase;
 }
 
+.send{
+	color:white;
+	font-family: "Open-Sans", sans-serif;
+}
+
 /*---------------RESPONSIVENESS -------------*/
 @media only screen and (max-width: 1200px){
 	#s1{
