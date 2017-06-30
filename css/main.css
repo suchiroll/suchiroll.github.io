@@ -116,8 +116,12 @@ h1:hover{
 
 .form{
 	height: 300px;
-	padding-top:50px;
+	padding-top:75px;
 	color: white;
+}
+
+input{
+	border: none;
 }
 
 
