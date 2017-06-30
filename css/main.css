@@ -138,6 +138,15 @@ textarea{
 	width: 200px;
 }
 
+.formhead{
+	font-family: "Open-Sans", sans-serif;
+}
+
+submit{
+	border: none;
+	background-color: #cccccc;
+	text-transform: lowercase;
+}
 
 /*---------------RESPONSIVENESS -------------*/
 @media only screen and (max-width: 1200px){
