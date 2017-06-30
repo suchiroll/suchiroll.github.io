@@ -118,7 +118,7 @@ h1:hover{
 	text-align: left;
 	width: 250px;
 	height: 250px;
-	color: white;
+	color: #333;
 	text-transform: lowercase;
 	display: block;
  	margin-left: auto;
@@ -143,6 +143,7 @@ textarea{
 }
 
 button{
+	color:white;
 	border: none;
 	background-color: #333;
 	text-transform: lowercase;
