@@ -131,12 +131,14 @@ input{
 	padding: 5px;
 	border: none;
 	color: black;
+	
 }
 
 textarea{
 	border: none;
 	height: 200px;
-	width: 200px;
+	width: 150px;
+	padding:5px;
 }
 
 .formhead{
