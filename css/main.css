@@ -121,8 +121,16 @@ h1:hover{
 }
 
 input{
+	width: 200px;
+	padding: 5px;
 	border: none;
 	color: black;
+}
+
+textarea{
+	border: none;
+	height: 150px;
+	width: 200px;
 }
 
 
