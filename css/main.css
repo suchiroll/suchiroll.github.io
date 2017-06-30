@@ -115,12 +115,15 @@ h1:hover{
 }
 
 .form{
+	text-align: left;
 	height: 300px;
 	padding-top:75px;
 	color: white;
+	text-transform: lowercase;
 }
 
 input{
+	
 	width: 200px;
 	padding: 5px;
 	border: none;
@@ -129,7 +132,7 @@ input{
 
 textarea{
 	border: none;
-	height: 150px;
+	height: 200px;
 	width: 200px;
 }
 
