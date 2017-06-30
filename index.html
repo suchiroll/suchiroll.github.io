@@ -62,12 +62,10 @@
 
 <div class="container-fluid content bg10 text-center">
 	<div class = "form">
-		<form action="http://formspree.io/sucnat@gmail.com">
-			<h5>Email </h5><input type="email" name="_replyto"> 
-			<h5> Name </h5><input type = "text" name = "name"> 
-			<h5> Your message: </h5>
-			<textarea   name="body"></textarea>
-			<input type="submit" value="Send">
+		<form method="POST" action="http://formspree.io/YOUREMAILHERE">
+			 <input type="email" name="email" placeholder="Your email">
+			 <textarea name="message" placeholder="Your message"></textarea>
+			 <button type="submit">Send</button>
 		</form>
 	</div>
 </div>
