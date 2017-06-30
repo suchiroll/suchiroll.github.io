@@ -116,10 +116,14 @@ h1:hover{
 
 .form{
 	text-align: left;
+	width: 300px;
 	height: 300px;
 	padding-top:75px;
 	color: white;
 	text-transform: lowercase;
+	 display: block;
+ 	 margin-left: auto;
+ 	 margin-right: auto;
 }
 
 input{
