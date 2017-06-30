@@ -114,6 +114,12 @@ h1:hover{
 	height: 200px;
 }
 
+.form{
+	height: 300px;
+	padding-top:50px;
+	color: white;
+}
+
 
 /*---------------RESPONSIVENESS -------------*/
 @media only screen and (max-width: 1200px){
