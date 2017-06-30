@@ -98,7 +98,10 @@ h1:hover{
 }
 
 .bg9{
-
+	background-image: url("contact.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .bg10{
