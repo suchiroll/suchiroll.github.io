@@ -5,15 +5,31 @@
 	font-family: 'Pacifico', cursive;
 }
 
-
 .navbar{
+	background-color: transparent !important;
+	background:transparent;
 	min-height: 20px !important;
 	text-align: center-left;
-	color: #cccccc;
+	color: #fff;
+	border-bottom-color: transparent !important;
+
 }
+
+.navbar li { color: #000 
+} 
+
 #name{
-	color:#cccccc;
-	font-family: 'Open-Sans', sans-serif;
+	color:#fff;
+		font-family: 'Open Sans Light', sans-serif;
+	font-style: normal;
+	src: url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff'));
+	border-bottom-color: #fff;
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+	padding-bottom: 2px;
 }
 
 body,html{
@@ -22,14 +38,10 @@ body,html{
 }
 
 .container-fluid{
-	height:400px;
+	height:800px;
 }
 
-h1{
-	position: relative;
-	top: 45%;
-	transform: translateY(-45%);
-	
+h1{	
 }
 
 h1:hover{
@@ -38,21 +50,36 @@ h1:hover{
 
 
 .subline{
-	line-height: 300px;
-	font-size: 75px;
-	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'Open Sans Light', sans-serif;
+	font-style: normal;
+	src: url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff'));
 }
 
 .welcome{
-	font-size: 300px;
-	font-family: 'Pacifico', cursive;
+	letter-spacing: 10px;
+	display:inline-block;
+	color: #fff;
+	font-size: 35px;
+	font-family: 'Open Sans Light', sans-serif;
+	font-style: normal;
+	src: url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff'));
+	border-top-width: 2px;
+	border-left-width: 0px;
+	border-bottom-width: 2px;
+	border-right-width: 0px;
+	border-color: #fff;
+	border-style: solid;
+	padding: 5px;
 
 }
 
 #s1{
+	line-height: 1px;
 	background-color: #ffffff;
 	background-image: url("s1.jpg");
-	height: 700px;
+	height: 900px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -63,89 +90,120 @@ h1:hover{
 	color: #fff;
 }
 .bg2{
-	background-color: #5E8C6A;
+	background-color: #f9f4ea;
 }
 
-.bg3{
-	background-image: url("experience.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.bg2 .title{
+	border-style: dotted;
+	border-right-width: 2px;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+	border-top-width: 0px;
+	border-color: #fcc244 ;
+	float:left;
 }
+
 
 .bg4{
-	background-color: #F14D4C;
-}
-.bg5{
-	background-image: url("skills.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.bg6{
-	background-color:#F2C45A ;
+	background-color: #e5ded3;
 }
 
-.bg7{
-	background-image: url("projects.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.bg4 .title{
+	height: 800px;
+	border-style: dotted;
+	border-right-width: 0px;
+	border-left-width: 2px;
+	border-bottom-width: 0px;
+	border-top-width: 0px;
+	border-color: #fcc244 ;
+	float:right;
+}
+
+.bg6{
+	background-color:#f9f4ea ;
+}
+
+.bg6 .title{
+	border-style: dotted;
+	border-right-width: 2px;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+	border-top-width: 0px;
+	border-color: #fcc244 ;
+	float:left;
 }
 
 .bg8{
-	background-color: #88A65E;
+	background-color:  #e5ded3;
 }
 
-.bg9{
-	background-image: url("contact.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.bg10{
-	background-color: #BFB35A;
+.bg8 .title{
+	border-style: dotted;
+	border-right-width: 0px;
+	border-left-width: 2px;
+	border-bottom-width: 0px;
+	border-top-width: 0px;
+	border-color: #fcc244 ;
+	float:right;
 }
 
 .content{
-	height: 400px;
+	width: 100%;
+	height: 500px;
 }
 
+.bg10{
+	height: 260px;
+	background-color:#fcc244;
+}
+.bg10 .title{
+	float:left;
+}
+.experiences{
+	height: 800px;
+}
 .image{
 
 	height: 200px;
 }
 
 .form{
-	padding-top:20px;
+	margin-top: 10px;
+	padding-top:10px;
 	text-align: left;
 	width: 250px;
 	height: 250px;
-	color: #333;
+	color: #fff;
 	text-transform: lowercase;
 	display: inline-block;
+	padding-left: 10px;
  	margin-left: auto;
  	margin-right: auto;
+
 }
 
 input{
+	background-color: transparent;
+
 	width: 200px;
 	padding: 5px;
 	border: none;
-	color: black;
+	color: #fff;
 	
 }
 
 textarea{
-	border: none;
-	height: 150px;
+	background-color: transparent;
+	border:none;
+	height: 100px;
 	width: 200px;
 	padding:5px;
 }
 
 .formhead{
-	font-family: "Open-Sans", sans-serif;
+		font-family: 'Open Sans Light', sans-serif;
+	font-style: normal;
+	src: url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff'));
 }
 
 .contactinfo{
@@ -154,17 +212,85 @@ textarea{
 }
 
 button{
-	color:white;
+	color: black;
 	border: none;
-	background-color: #333;
+	background-color: #fff;
 	text-transform: lowercase;
 }
 
 .send{
-	color:white;
-	font-family: "Open-Sans", sans-serif;
+	color:#fcc244;
+		font-family: 'Open Sans Light', sans-serif;
+	font-style: normal;
+	src: url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff'));
 }
 
+
+.title{
+	min-width: 500px;
+	height: 500px;
+	width: 30%;
+	display: inline-block;
+}
+
+.info{
+	width: 70%;
+	display: inline-block;
+}
+
+.circle{
+	padding-top: 70px;
+	margin-top: 150px;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background-color: #fcc244;
+	margin-left: 100px;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 200px;
+	
+} 
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.8s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	background-color: #fff;
+	transform: rotateY(180deg);
+}
 /*---------------RESPONSIVENESS -------------*/
 @media only screen and (max-width: 1200px){
 	#s1{
@@ -174,12 +300,12 @@ button{
 	}
 
 	.welcome{
-		font-size:250px;
+		font-size:100px;
 
 	}
 
 	.subline{
-		font-size: 50px;
+		font-size: 30px;
 
 	}
 
@@ -192,12 +318,12 @@ button{
 	}
 
 	.welcome{
-		font-size:100px;
+		font-size:50px;
 
 	}
 
 	.subline{
-		font-size: 25px;
+		font-size: 15px;
 
 
 }
@@ -209,14 +335,14 @@ button{
 	}
 
 	.welcome{
-		font-size:100px;
+		font-size:25px;
 
 	}
 
 	.subline{
 		padding-top: 200px;
 		line-height: 25px;
-		font-size: 25px;
+		font-size: 10px;
 
 }
 
