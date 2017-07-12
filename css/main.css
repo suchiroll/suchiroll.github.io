@@ -1,4 +1,18 @@
 
+:root{
+	--yellow-color:  #fcc244;
+	--blue-color:#2184a8;
+	--purple-color:#84164C;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 .content-title{
 	font-size: 75px;
 	padding-top:20px;
@@ -33,7 +47,7 @@
 }
 
 #name:hover{
-	color: #2184a8;
+	color: var(--blue-color);
 }
 
 body,html{
@@ -49,12 +63,12 @@ h1{
 }
 
 h1:hover{
-	color:#2184a8;
+	color: var(--blue-color);
 }
 
 
 .subline{
-	color: #fff;
+	color: var(--purple-color);
 	font-size: 20px;
 	font-family: 'Open Sans Light', sans-serif;
 	font-style: normal;
@@ -105,7 +119,7 @@ h1:hover{
 	border-left-width: 0px;
 	border-bottom-width: 0px;
 	border-top-width: 0px;
-	border-color: #fcc244 ;
+	border-color: var(--yellow-color);
 	float:left;
 }
 
@@ -135,7 +149,7 @@ h1:hover{
 	border-left-width: 0px;
 	border-bottom-width: 0px;
 	border-top-width: 0px;
-	border-color: #fcc244 ;
+	border-color: var(--yellow-color);
 	float:left;
 }
 
@@ -149,7 +163,7 @@ h1:hover{
 	border-left-width: 2px;
 	border-bottom-width: 0px;
 	border-top-width: 0px;
-	border-color: #fcc244 ;
+	border-color: var(--yellow-color);
 	float:right;
 }
 
@@ -160,8 +174,8 @@ h1:hover{
 
 .bg10{
 	display:inline-block;
-	height: 260px;
-	background-color:#fcc244;
+	height: 300px;
+	background-color: var(--yellow-color);
 }
 .bg10 .title{
 	display:inline-block;
@@ -224,10 +238,13 @@ button{
 }
 
 .send{
-	color:#fcc244;
+	color: var(--yellow-color);
 		font-family: 'Open Sans Light', sans-serif;
 	font-style: normal;
 	src: url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff'));
+}
+.send:hover{
+	background-color: var(--purple-color);
 }
 
 
@@ -249,6 +266,11 @@ button{
 	border-left-width:0px;
 	border-right-width:0px;
 
+}
+
+ .top{
+	border-top-width:0px;
+	border-bottom-width:0px;
 }
 .info{
 	height:500px;
@@ -282,7 +304,7 @@ button{
 
 /* hide back of pane during swap */
 .front, .back {
-	padding-top: 50px;
+	padding-top: 65px;
 	margin-top: 150px;
 	backface-visibility: hidden;
 	position: absolute;
@@ -292,53 +314,50 @@ button{
 
 /* front pane, placed above back */
 .front {
-	color:#fff;
-	background-color: #84164C;
+	color: var(--purple-color);
+	background-color: transparent;
+	border-style: dashed;
+	border-width:2px;
+	border-color: var(--purple-color);
+	border-radius:10px;
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
+
+
 /* back, initially hidden pane */
 .back {
-	background-color: #2184a8;
+	background-color: var(--blue-color);
 	color: #fff;
 	transform: rotateY(180deg);
 }
 
-.bexp{
-	padding-top:15px;
-}
-
 .fcontact{
 	margin-top: 50px;
-	height: 150px;
-	width:150px;
-	
 
-}
-
-.cont{
 	
 }
+
+
 
 .bcontact{
-		margin-top: 50px;
-			height: 150px;
-	width:150px;
+	margin-top: 50px;
+
 	
 }
 
 .subdivtitle{
-	color: #2184a8;
+	color: var(--blue-color);
 	font-size: 35px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	border-color: #2184a8;
+	border-color: var(--blue-color);
 }
 
 .subdivtitle:hover{
-	color: #fcc244;
+	color: var(--yellow-color);
 }
 
 .experienceinfo{
@@ -346,14 +365,15 @@ button{
 }
 
 .resume{
-		font-family: 'Gentium Book Basic', serif;
-		width:100%;
-		height:400px;
-	
+	height:400px;
+}
+table{
+	font-family: 'Gentium Book Basic', serif;
+	width:100%;
 }
 
 .jobtitle{
-	color: #84164C ;
+	color: var(--purple-color);
 	width:20%;
 
 }
@@ -361,7 +381,7 @@ button{
 .jobdes{
 	padding-left:10px;
 	width:40%;
-		color: #84164C ;
+		color: var(--purple-color);
 }
 
 .location{
@@ -377,7 +397,7 @@ button{
 .webintern{
 	border-style: solid;
 	border-style: solid;
-	border-color: #fcc244 ;
+	border-color: var(--yellow-color);
 	border-top-width:1px;
 	border-bottom-width:1px;
 	border-left-width:0px;
@@ -388,7 +408,7 @@ button{
 .oit{
 		border-style: solid;
 	border-style: solid;
-	border-color: #fcc244 ;
+	border-color: var(--yellow-color);
 	border-top-width:1px;
 	border-bottom-width:1px;
 	border-left-width:0px;
@@ -465,7 +485,8 @@ li{
 		font-size: 20px;
 	}	
 	.title{
-		height:400px;
+		padding-left: 0px;
+		height:170px;
 		width:100%;
 		display:inline-block;
 	}
@@ -475,34 +496,32 @@ li{
 	}
 	
 	.info{
-		min-height:400px;
-		min-width: 300px;
+		height:400px;
 		width:100%;
 		display:inline-block;
 	}
 
-.flip-container{
-	height: 400px;
+.flip-container, .front, .back, .fcontact{
+	height: 150px;
+	width: 100%;
 }
 
-.exp{
-	height: 400px;
+
+.front, .back {
+	padding-top: 40px;
+	margin-top: 10px;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
 }
 
-.bg4 .circle{
-	margin-top:100px;
+.divtitle{
+	
 }
 
-.circle{
-	margin-top: 50px;
-	margin-left:auto;
-	margin-right:auto;
-}
- 
- .back{
-	 height:200px;
-	 width:200px;
- }
+
 .content-title{
 	padding-top: 0px;
 	font-size: 50px;
@@ -514,7 +533,7 @@ li{
 
 .content{
 	display:inline-block;
-	height: 400px;
+	height: 810px;
 }
 
 .bg2{
@@ -527,7 +546,7 @@ li{
 	border-left-width: 0px;
 	border-bottom-width: 2px;
 	border-top-width: 0px;
-	border-color: #fcc244 ;
+	border-color: var(--yellow-color);
 	float:none;
 }
 
@@ -537,21 +556,20 @@ li{
 }
 
 .bg4 .title{
-	height:400px;
+	height:170px;
 	border-style: dotted;
 	border-right-width: 0px;
 	border-left-width: 0px;
 	border-bottom-width: 2px;
 	border-top-width: 0px;
-	border-color: #fcc244 ;
+	border-color: var(--yellow-color);
 	float:none;
 }
 .fcontact{
-	margin-left:100px;
-	padding-top:65px;
+	padding-top:35px;
 	font-size:24px;
-	width:200px;
-	height:200px;
+	width:100%;
+	height:150px;
 }
 
 .backcont{
@@ -567,7 +585,7 @@ li{
 	border-left-width: 0px;
 	border-bottom-width: 2px;
 	border-top-width: 0px;
-	border-color: #fcc244 ;
+	border-color: var(--yellow-color);
 	float:none;
 }
 
@@ -581,13 +599,37 @@ li{
 	border-left-width: 0px;
 	border-bottom-width: 2px;
 	border-top-width: 0px;
-	border-color: #fcc244 ;
+	border-color: var(--yellow-color);
 	float:none;
 }
 
+.bg10{
+	height:500px;
+}
+
 .bg10 .title{
-	height:400px;
+	height:170px;
 }
-.cont{
-	font-size:24px;
+
+input{
+	width: 300px;	
 }
+
+textarea{
+	height: 200px;
+	width: 300px;
+
+}
+
+
+.contactinfo{
+	width: 250px;
+	display:inline-block;
+}
+
+.send{
+	width: 100px;
+	height:50px;
+	font-size: 25px;
+}
+
