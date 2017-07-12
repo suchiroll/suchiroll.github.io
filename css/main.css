@@ -9,7 +9,7 @@
 	background-color: transparent !important;
 	background:transparent;
 	min-height: 20px !important;
-	text-align: center-left;
+	text-align: left;
 	color: #fff;
 	border-bottom-color: transparent !important;
 
@@ -45,7 +45,7 @@ h1{
 }
 
 h1:hover{
-	color:#ffa31a;
+	color:#2184a8;
 }
 
 
@@ -58,6 +58,7 @@ h1:hover{
 }
 
 .welcome{
+	
 	letter-spacing: 10px;
 	display:inline-block;
 	color: #fff;
@@ -76,6 +77,7 @@ h1:hover{
 }
 
 #s1{
+	padding-top:400px;
 	line-height: 1px;
 	background-color: #ffffff;
 	background-image: url("s1.jpg");
@@ -153,10 +155,13 @@ h1:hover{
 }
 
 .bg10{
+	display:inline-block;
 	height: 260px;
 	background-color:#fcc244;
 }
 .bg10 .title{
+	display:inline-block;
+	height: 260px;
 	float:left;
 }
 .experiences{
@@ -184,9 +189,8 @@ h1:hover{
 
 input{
 	background-color: transparent;
-
 	width: 200px;
-	padding: 5px;
+	
 	border: none;
 	color: #fff;
 	
@@ -197,11 +201,10 @@ textarea{
 	border:none;
 	height: 100px;
 	width: 200px;
-	padding:5px;
 }
 
 .formhead{
-		font-family: 'Open Sans Light', sans-serif;
+	font-family: 'Open Sans Light', sans-serif;
 	font-style: normal;
 	src: url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRa1RVmPjeKy21_GQJaLlJI.woff) format('woff'));
 }
@@ -234,6 +237,7 @@ button{
 }
 
 .info{
+	min-width: 500px;
 	width: 70%;
 	display: inline-block;
 }
@@ -248,8 +252,17 @@ button{
 	margin-left: 100px;
 }
 
+.bg4 .circle{
+	margin-top:300px;
+	margin-left:200px;
+}
+
+ .bg8 .circle{
+	 margin-left:200px;
+ }
 /* entire container, keeps perspective */
 .flip-container {
+	display:inline-block;
 	perspective: 1000px;
 }
 	/* flip the pane when hovered */
@@ -273,7 +286,6 @@ button{
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -288,19 +300,45 @@ button{
 
 /* back, initially hidden pane */
 .back {
-	background-color: #fff;
+	background-color: #2184a8;
+	color: #fff;
 	transform: rotateY(180deg);
+}
+
+.bexp{
+	padding-top:15px;
+}
+
+.fcontact{
+	margin-top:70px;
+	padding-top:20px;
+	width:100px;
+	height: 100px;
+	background-color: #fff;
+	font-size:8px;
+}
+
+.cont{
+	font-size: 15px;
+}
+
+.bcontact{
+	margin-top:70px;
+	padding-top:20px;
+	width:100px;
+	height:100px;
+	
 }
 /*---------------RESPONSIVENESS -------------*/
 @media only screen and (max-width: 1200px){
 	#s1{
 
-		height: 600px;
+		height: 800px;
 
 	}
 
 	.welcome{
-		font-size:100px;
+		font-size:40px;
 
 	}
 
@@ -313,23 +351,23 @@ button{
 
 @media only screen and (max-width: 900px){
 	#s1{
-		height: 450px;
+		height: 600px;
 
 	}
 
 	.welcome{
-		font-size:50px;
+		font-size:35px;
 
 	}
 
 	.subline{
 		font-size: 15px;
 
-
 }
 
 @media only screen and (max-width: 600px){
 	#s1{
+		padding-top:250px;
 		height: 500px;
 
 	}
@@ -340,12 +378,48 @@ button{
 	}
 
 	.subline{
-		padding-top: 200px;
 		line-height: 25px;
-		font-size: 10px;
+		font-size: 20px;
+	}	
+	.title{
+		height:400px;
+		width:100%;
+		display:inline-block;
+	}
+	
+	.bg2 .title{
+		border-right-width: 0px;
+	}
+	
+	.info{
+		min-height:400px;
+		min-width: 300px;
+		width:100%;
+		display:inline-block;
+	}
 
+.flip-container{
+	height: 400px;
 }
 
+.exp{
+	height: 400px;
+}
+
+.bg4 .circle{
+	margin-top:100px;
+}
+
+.circle{
+	margin-top: 50px;
+	margin-left:auto;
+	margin-right:auto;
+}
+ 
+ .back{
+	 height:200px;
+	 width:200px;
+ }
 .content-title{
 	padding-top: 0px;
 	font-size: 50px;
@@ -356,5 +430,112 @@ button{
 }
 
 .content{
-	height: 200px;
+	display:inline-block;
+	height: 400px;
+}
+
+.bg2{
+	background-color: #f9f4ea;
+}
+
+.bg2 .title{
+	border-style: dotted;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 2px;
+	border-top-width: 0px;
+	border-color: #fcc244 ;
+	float:none;
+}
+
+
+.bg4{
+	background-color: #e5ded3;
+}
+
+.bg4 .title{
+	height:400px;
+	border-style: dotted;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 2px;
+	border-top-width: 0px;
+	border-color: #fcc244 ;
+	float:none;
+}
+
+.bg6{
+	background-color:#f9f4ea ;
+}
+
+.bg6 .title{
+	border-style: dotted;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 2px;
+	border-top-width: 0px;
+	border-color: #fcc244 ;
+	float:none;
+}
+
+.bg8{
+	background-color:  #e5ded3;
+}
+
+.bg8 .title{
+	border-style: dotted;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 2px;
+	border-top-width: 0px;
+	border-color: #fcc244 ;
+	float:none;
+}
+
+.flip-container {
+	display:inline-block;
+	perspective: 1000px;
+	
+}
+
+.flip-container, .front, .back {
+	width: 200px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: none;
+}
+	
+
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.8s;
+	transform-style: none;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: none;
+	
+}
+
+
+
+.back {
+	background-color: transparent;
+	color: #fff;
+	transform: none;
 }
