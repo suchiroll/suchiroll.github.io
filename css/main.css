@@ -362,6 +362,14 @@ button{
 
 	.subline{
 		font-size: 15px;
+	}
+	
+.title{
+	min-width: 250px;
+	height: 500px;
+	width: 30%;
+	display: inline-block;
+}
 
 }
 
@@ -463,7 +471,17 @@ button{
 	border-color: #fcc244 ;
 	float:none;
 }
+.fcontact{
+	margin-left:100px;
+	padding-top:65px;
+	font-size:24px;
+	width:200px;
+	height:200px;
+}
 
+.backcont{
+	margin-left:120px;
+}
 .bg6{
 	background-color:#f9f4ea ;
 }
@@ -492,6 +510,12 @@ button{
 	float:none;
 }
 
+.bg10 .title{
+	height:400px;
+}
+.cont{
+	font-size:24px;
+}
 .flip-container {
 	display:inline-block;
 	perspective: 1000px;
