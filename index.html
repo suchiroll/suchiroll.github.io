@@ -13,6 +13,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
+		<script src="myscript.js"></script>
 	</head>
 
 <body data-spy="scroll" data-target=".navbar" data-offeset="50">
@@ -20,7 +21,7 @@
 <nav class = "navbar navbar-inverse navbar-fixed-top navigation">
 	<div class = "container">
 		<div class = "navbar-header">
-		<h5 id="name"> suchitra natarajan about 	contact 	portfolio</h5>
+		<h5 id="name"> <a class = "navlink" href = "#s1"> suchitra natarajan </a> <a class = "navlink" href = "#s2"> about 	</a> <a class = "navlink" href = "#s4"> experience </a> <a class = "navlink" href = "#s6">	skills </a> <a class = "navlink" href = "#s8">	projects </a> <a class = "navlink" href = "#s10">	contact </a>  </h5>
 		</div>
 	</div>
 
@@ -43,7 +44,13 @@
 		</div>
 		</div>
 	</div>
-	<div class = "info"> </div>
+	<div class = "info">
+		<div class = "divhead even-divhead"> <h4 class = "subdivtitle divtitle"> HELLO </h4></div>
+		<div class = "about-container">
+				<div class = "aboutme"><h5> Who Am I?</h5> <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p></div>
+			
+			</div>
+	</div>
 </div>
 
 
@@ -59,6 +66,7 @@
 	<div class = "info experienceinfo">
 		<div class = "divhead"> <h4 class = "subdivtitle divtitle"> RESUME </h4></div>
 		<div class = "resume"> 
+		
 		<table style = "width:100%">
 		<!--	<tr class = "categories">
 				<th class = "jobtitle"> title </th>
@@ -66,17 +74,25 @@
 				<th class = "time"> time </th>
 				<th class = "jobdes"> description </th>
 			</tr> -->
-			<tr class = "webintern">
-				<th  class = "jobtitle"> Web Development Intern </th>
-				<th lass = "location"> SEMGeeks </th>
+			<tr class = "accordion webintern">
+				<th class ="jobtitle"> Web Development Intern </th>
+				<th class = "location"> SEMGeeks </th>
 				<th class = "time"> Summer 2017  </th>
 				<th class = "jobdes"> description </th>
+				<th> <span onClick="toggle1();">toggle</span> </th>
+			</tr> 
+			<tr id = "hidethis1" class = "webinternsub" style="display:none"> 
+			 <td> Blah blah blah blah blah blah </td> 
 			</tr>
 			<tr class = "oit">
 				<th  class = "jobtitle"> Technology Consultant </th>
 				<th lass = "location"> Office of Information Technology at Rutgers University </th>
 				<th class = "time"> May 2016 - Current </th>
 				<th class = "jobdes"> description </th>
+				<th> <span onClick="toggle2();">toggle</span> </th>
+			</tr>
+			<tr id = "hidethis2" class = "webinternsub" style="display:none"> 
+			 <td> Blah blah blah blah blah blah </td> 
 			</tr>
 			</table>
 		</div>
@@ -84,8 +100,8 @@
 </div>
 
 
-<div class="container-fluid content skills bg6 text-center"> <!-- Skills -->
-		<div class = "title"> 
+<div id = "s6" class="container-fluid content skills bg6 text-center"> <!-- Skills -->
+		<div class = "title "> 
 		<div class = "flip-container" ontouchstart = "this.classList.toggle('hover');">
 		<div class = "flipper">
 			<div class = " front even"> <h3 class = "divtitle top"> SKILLS </h3> </div>
@@ -94,34 +110,38 @@
 		</div>
 	</div>
 	<div class = "info">
-<!--
-		<table style = "width:100%">
-			<tr> <th> languages </th> </tr>
+	<div class = "divhead"> <h4 class = "subdivtitle divtitle"> SKILLS </h4></div>
+		<table class = "skillslist" style = "width:100%">
+			<tr> 
+				<th> languages </th> 
+				<th> programs </th> 
+				<th> misc. </th> 
+			</tr>
 			<tr>
-				<th class = "skill"> HTML/CSS </th>
+				<th class = "skill"> Skill  </th>
 			
 			</tr>
 			<tr>
-				<th class = "skill"> Java </th>
+				<th class = "skill"> Skill </th>
 			
 			</tr>
 			<tr>
-				<th class = "skill"> C </th>
+				<th class = "skill"> Skill  </th>
 				</tr>
 			<tr>
-				<th class = "skill"> PHP </th>
+				<th class = "skill"> Skill  </th>
 			
 			</tr>
 			<tr>
-				<th class = "skill"> Python </th>
-		
+				<th class = "skill"> Skill  </th>
 			</tr>
-		</table> -->
+		</table> 
+
 	 </div>
 </div>
 
 
-<div class="container-fluid content projects bg8 text-center"> <!-- Projects -->
+<div id = "s8" class="container-fluid content projects bg8 text-center"> <!-- Projects -->
 		<div class = "title"> 
 		<div class  = "flip-container" ontouchstart = "this.classList.toggle('hover');">
 		<div class = "flipper">
@@ -134,7 +154,7 @@
 </div>
 
 
-<div class="container-fluid content bg10 text-center"> <!-- contact -->
+<div id = "s10" class="container-fluid content bg10 text-center"> <!-- contact -->
 		<div class = "title">
 		<div class = " flip-container" ontouchstart = "this.classList.toggle('hover');">
 		<div class = "flipper">
