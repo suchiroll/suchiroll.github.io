@@ -2,7 +2,7 @@
 <html lang = "en">
 	<head>
 	
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
 		<title> SuchiRoll: Suchitra Natarajan's Page </title>
 		  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 		<meta name="referrer" content="origin">
@@ -14,6 +14,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
 		<script src="myscript.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 
 <body data-spy="scroll" data-target=".navbar" data-offeset="50">
@@ -62,82 +63,38 @@
 <div id="s4" class="container-fluid content experiences bg4 text-center"> <!-- Experiences -->
 
 	<div class = "info experienceinfo">
-		<ul class="slides">
-    <input type="radio" name="radio-btn" id="img-1" checked />
-    <li class="slide-container">
-		<div class="slide">
-		
-        </div>
-		<div class="nav">
-			<label for="img-6" class="prev">&#x2039;</label>
-			<label for="img-2" class="next">&#x203a;</label>
-		</div>
-    </li>
+		<div class = "carousel-wrapper">
 
-    <input type="radio" name="radio-btn" id="img-2" />
-    <li class="slide-container">
-        <div class="slide">
-        
-        </div>
-		<div class="nav">
-			<label for="img-1" class="prev">&#x2039;</label>
-			<label for="img-3" class="next">&#x203a;</label>
-		</div>
-    </li>
+			
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<div class = "carousel-menu">
+						  <!-- Indicators -->
+					  <ol class=" carousel-indicators">
+					    <li id = "li1" data-target="#myCarousel" data-slide-to="0" class="active"><h5>EDUCATION </h5></li><br/><li data-target="#myCarousel" data-slide-to="1"><h5> WORK1 </h5></li><br/><li data-target="#myCarousel" data-slide-to="2"> <h5> WORK2 </h5></li>
+					  </ol>
 
-    <input type="radio" name="radio-btn" id="img-3" />
-    <li class="slide-container">
-        <div class="slide">
-      
-        </div>
-		<div class="nav">
-			<label for="img-2" class="prev">&#x2039;</label>
-			<label for="img-4" class="next">&#x203a;</label>
-		</div>
-    </li>
+				
 
-    <input type="radio" name="radio-btn" id="img-4" />
-    <li class="slide-container">
-        <div class="slide">
-      
-        </div>
-		<div class="nav">
-			<label for="img-3" class="prev">&#x2039;</label>
-			<label for="img-5" class="next">&#x203a;</label>
-		</div>
-    </li>
+				</div>
+				<div class = "carousel-content">
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					    <div class="item active education">
+					     
+					    </div>
 
-    <input type="radio" name="radio-btn" id="img-5" />
-    <li class="slide-container">
-        <div class="slide">
-       
-        </div>
-		<div class="nav">
-			<label for="img-4" class="prev">&#x2039;</label>
-			<label for="img-6" class="next">&#x203a;</label>
-		</div>
-    </li>
+					    <div class="item work1">
+					     
+					    </div>
 
-    <input type="radio" name="radio-btn" id="img-6" />
-    <li class="slide-container">
-        <div class="slide">
-        
-        </div>
-		<div class="nav">
-			<label for="img-5" class="prev">&#x2039;</label>
-			<label for="img-1" class="next">&#x203a;</label>
-		</div>
-    </li>
+					    <div class="item work2">
+					      
+					    </div>
+					  </div>
 
-    <li class="nav-dots">
-      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
-      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
-    </li>
-</ul>
+					</div>
+			</div>
+		</div>
 	</div>
 </div>
 
