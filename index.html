@@ -37,132 +37,148 @@
 
 <div id="s2" class="container-fluid content about  bg2 text-center"> <!-- ABOUT --> 
 	<div class = "title">
-	<div class = " flip-container" ontouchstart = "this.classList.toggle('hover');">
-		<div class = "flipper">
-			<div class = " front even"> <h3 class = "divtitle top"> ABOUT </h3> </div>
-			<div class = " back"> <h3 class = "divtitle"> ABOUT </h3> </div>
+		<div class = "title-wrapper">
+			<div class = " flip-container" ontouchstart = "this.classList.toggle('hover');">
+				<div class = "flipper">
+					<div class = " front even"> <h3 class = "divtitle top"> ABOUT </h3> </div>
+					<div class = " back"> <h3 class = "divtitle"> ABOUT </h3> </div>
+				</div>
+				</div>
 		</div>
-		</div>
+
 	</div>
-	<div class = "info">
-		<div class = "divhead even-divhead"> <h4 class = "subdivtitle divtitle"> HELLO </h4></div>
+	<div class = "info about-info">
+		<div class = "info-wrapper about-wrapper">
+		<div class = "divhead even-divhead"> </div>
 		<div class = "about-container">
-				<div class = "aboutme"><h5> Who Am I?</h5> <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p></div>
+				<div class = "aboutme"><p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p></div>
 			
+			</div>
 			</div>
 	</div>
 </div>
 
 
 <div id="s4" class="container-fluid content experiences bg4 text-center"> <!-- Experiences -->
-	<div class = "title" >
-		<div class = "flip-container exp" ontouchstart = "this.classList.toggle('hover');">
-			<div class = "flipper">
-				<div class = " front"> <h3 class = "divtitle top"> EXPERIENCE </h3> </div>
-				<div class = "back bexp"> <h3 class = "divtitle"> THINGS I'VE DONE </h3> </div>
-			</div>
-		</div>
-	</div>
+
 	<div class = "info experienceinfo">
-		<div class = "divhead"> <h4 class = "subdivtitle divtitle"> RESUME </h4></div>
-		<div class = "resume"> 
+		<ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+		<div class="slide">
 		
-		<table style = "width:100%">
-		<!--	<tr class = "categories">
-				<th class = "jobtitle"> title </th>
-				<th class = "location"> location </th>
-				<th class = "time"> time </th>
-				<th class = "jobdes"> description </th>
-			</tr> -->
-			<tr class = "accordion webintern">
-				<th class ="jobtitle"> Web Development Intern </th>
-				<th class = "location"> SEMGeeks </th>
-				<th class = "time"> Summer 2017  </th>
-				<th class = "jobdes"> description </th>
-				<th> <span onClick="toggle1();">toggle</span> </th>
-			</tr> 
-			<tr id = "hidethis1" class = "webinternsub" style="display:none"> 
-			 <td> Blah blah blah blah blah blah </td> 
-			</tr>
-			<tr class = "oit">
-				<th  class = "jobtitle"> Technology Consultant </th>
-				<th lass = "location"> Office of Information Technology at Rutgers University </th>
-				<th class = "time"> May 2016 - Current </th>
-				<th class = "jobdes"> description </th>
-				<th> <span onClick="toggle2();">toggle</span> </th>
-			</tr>
-			<tr id = "hidethis2" class = "webinternsub" style="display:none"> 
-			 <td> Blah blah blah blah blah blah </td> 
-			</tr>
-			</table>
+        </div>
+		<div class="nav">
+			<label for="img-6" class="prev">&#x2039;</label>
+			<label for="img-2" class="next">&#x203a;</label>
 		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+        
+        </div>
+		<div class="nav">
+			<label for="img-1" class="prev">&#x2039;</label>
+			<label for="img-3" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+      
+        </div>
+		<div class="nav">
+			<label for="img-2" class="prev">&#x2039;</label>
+			<label for="img-4" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide">
+      
+        </div>
+		<div class="nav">
+			<label for="img-3" class="prev">&#x2039;</label>
+			<label for="img-5" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-5" />
+    <li class="slide-container">
+        <div class="slide">
+       
+        </div>
+		<div class="nav">
+			<label for="img-4" class="prev">&#x2039;</label>
+			<label for="img-6" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-6" />
+    <li class="slide-container">
+        <div class="slide">
+        
+        </div>
+		<div class="nav">
+			<label for="img-5" class="prev">&#x2039;</label>
+			<label for="img-1" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+    </li>
+</ul>
 	</div>
 </div>
 
 
 <div id = "s6" class="container-fluid content skills bg6 text-center"> <!-- Skills -->
-		<div class = "title "> 
-		<div class = "flip-container" ontouchstart = "this.classList.toggle('hover');">
-		<div class = "flipper">
-			<div class = " front even"> <h3 class = "divtitle top"> SKILLS </h3> </div>
-			<div class = "back"> <h3 class = "divtitle"> THINGS I KNOW </h3> </div>
+<div class = "info skillsinfo">
+		<div class = "info-wrapper">
+		<div class = "box">
+			<div class = "row row-odd languages">
+				<div class = "row-title row-title-odd row-title-skills"><img src="coding.png" style = "height:160px">
+
+
+				</div>
+				
+
+				<div class = "resume-content content-odd"></div>
+			</div>
+			<div class = "row row-even programs">
+				<div class = "row-title row-title-even"><img src="app.png" style = "height:160px"></div>
+				<div class = "resume-content content-even"></div>
+			</div>
+			<div class = "row row-odd misc">
+				<div class = "row-title row-title-odd row-title-skills"><img src="idea.png" style = "height:160px"></div>
+				<div class = "resume-content content-odd"></div>
+			</div>
 		</div>
 		</div>
 	</div>
-	<div class = "info">
-	<div class = "divhead"> <h4 class = "subdivtitle divtitle"> SKILLS </h4></div>
-		<table class = "skillslist" style = "width:100%">
-			<tr> 
-				<th> languages </th> 
-				<th> programs </th> 
-				<th> misc. </th> 
-			</tr>
-			<tr>
-				<th class = "skill"> Skill  </th>
-			
-			</tr>
-			<tr>
-				<th class = "skill"> Skill </th>
-			
-			</tr>
-			<tr>
-				<th class = "skill"> Skill  </th>
-				</tr>
-			<tr>
-				<th class = "skill"> Skill  </th>
-			
-			</tr>
-			<tr>
-				<th class = "skill"> Skill  </th>
-			</tr>
-		</table> 
-
-	 </div>
 </div>
 
 
 <div id = "s8" class="container-fluid content projects bg8 text-center"> <!-- Projects -->
 		<div class = "title"> 
-		<div class  = "flip-container" ontouchstart = "this.classList.toggle('hover');">
-		<div class = "flipper">
-			<div class = " front"> <h3 class = "divtitle top"> PROJECTS </h3> </div>
-			<div class = " back"> <h3 class = "divtitle"> THINGS I MADE </h3> </div>
-		</div>
-		</div>
+
 	</div>
 	<div class = "info"> </div>
 </div>
 
 
 <div id = "s10" class="container-fluid content bg10 text-center"> <!-- contact -->
-		<div class = "title">
-		<div class = " flip-container" ontouchstart = "this.classList.toggle('hover');">
-		<div class = "flipper">
-			<div class = "front fcontact"> <h3  class = "divtitle top"> CONTACT </h3> </div>
-			<div class = "back bcontact"> <h3  class = "divtitle"> CONTACT </h3> </div>
-		</div>
-		</div>
-	</div>
+
 	<div class = "form">
 		<form method="POST" action="http://formspree.io/sucnat@gmail.com">
 			 <h4 class = "formhead" >Email</h4>
