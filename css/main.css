@@ -1,9 +1,19 @@
 
-:root{
+/*:root{
 	--yellow-color:  #fcc244;
 	--blue-color:#2184a8;
 	--purple-color:#84164C;
 	--bg-color:  #f9f4ea;
+	--bg-color-dark: #e5ded3 ;
+}*/
+
+
+:root{
+	--yellow-color:  #ffe8b2;
+	--blue-color:#74b293;
+	--purple-color:#cab8e0;
+	--bg-color:  #f9f4ea;
+	--bg-color-dark: #e5ded3 ;
 }
 
 html,body
@@ -174,7 +184,7 @@ textarea{
 	display:inline-block;
 }
 
-button{
+.send{
 	color: black;
 	border: none;
 	background-color: #fff;
@@ -230,12 +240,12 @@ button{
 }
 
 .row{
+	height: 250px;
 	margin-bottom: 20px;
 	/* box-shadow: 1px 1px 5px #888888;*/
 	background-color:#e2ded5;
 }
 .row-title{
-	padding-top: 30px;
 	color: #f9f4ea;
 	background-color: var(--purple-color);
 	height:250px;
@@ -247,6 +257,12 @@ button{
 
 }
 
+.row-title-back{
+	height: 100%;
+	width: 100%;
+	background-color: var(--blue-color);
+	
+}
 
 .row-title-odd{
 	float:left;
@@ -313,11 +329,12 @@ button{
 
 /* front pane, placed above back */
 .front {
+	background-image: url("face.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	color: var(--purple-color);
-	background-color: transparent;
-	border-style: dashed;
-	border-width:2px;
-	border-color: var(--purple-color);
+
 	border-radius:100px;
 	z-index: 2;
 	/* for firefox 31 */
@@ -490,27 +507,30 @@ button{
 }
 
 .card{
+	border-radius: 5px;
 	overflow: hidden;
 	 box-shadow: 1px 1px 5px #888888;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 60px;
+	margin-top: 50px;
 	width: 300px;
 	height: 300px;
-	background-color: #fff;
+	background-color: #e2ded5;
 }
 
-.card:hover{
-	transition-duration: .4s;
-	height: 380px;
-	width: 300px;
+.bst-img{
+	background-image: url("bstcard.jpg");
 }
+
 
 .card-img{
-	padding-left: 80%;
-	padding-top: 58%;
+	background-image: url("bstcard.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
 	width: 100%;
-	height: 70%;
+	height: 50%;
 	background-color: var(--blue-color);
 }
 
@@ -518,22 +538,40 @@ button{
 
 .card-info{
 	width: 100%;
-	height: 30%;
+	height: 50%;
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
-
-.githubbutton{
-	 box-shadow: 1px 1px 1px #888888;
-	border-radius: 50px;
-	height: 50px;
-	width: 50px;
+.proj-button{
+	border-radius: 20px;
+	margin-top: 7px;
+	text-align: center;
+	height: 35px;
+	padding-top: 10px;
+	width: 85px;
+	display: inline-block;
+	color: #e2ded5;
+	font-size: 10px;
 	background-color: var(--purple-color);
-	z-index: 500;
-
 }
 
-.githubbutton:hover{
+.proj-button:hover{
+	transition: .2s;
+	color: #000;
 	background-color: var(--yellow-color);
+}
+
+.live{
+	margin-left: 30px;
+	margin-right: 6px;
+}
+
+.source{
+	margin-right: 30px;
+	margin-left: 10px;
 }
 
 /*---------------RESPONSIVENESS -------------*/
@@ -664,7 +702,7 @@ button{
 
 
 .bg4{
-	background-color: #e5ded3;
+	background-color: var(--bg-color-dark);
 }
 
 .bg4 .title{
@@ -702,7 +740,7 @@ button{
 }
 
 .bg8{
-	background-color:  #e5ded3;
+	background-color:  var(--bg-color-dark);
 }
 
 .bg8 .title{
