@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".card").hover(function(){
-        $(".card-img").animate({height: '30%'},"fast"); 
-        $(".card-content").animate({height: '70%'},"fast"); 
+        $(".card-img").animate({height: '120px'},"slow"); 
+        $(".card-content").animate({height: '260px'},"slow"); 
         $(this).closest(".card").css("z-index",1);
         $(this).animate({
         	left: '-=55',
@@ -10,8 +10,8 @@ $(document).ready(function(){
         	width: '300px'
      	   }, "fast");
         }, function(){
-       	    $(".card-img").animate({height: '50%'},"fast"); 
-    	    $(".card-content").animate({height: '50%'},"fast"); 
+       	    $(".card-img").animate({height: '150px'},"fast"); 
+    	    $(".card-content").animate({height: '150px'},"fast"); 
         	$(this).closest(".card").css("z-index",0); 
        		$(this).animate({
        			left: '+=55',
