@@ -24,8 +24,14 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".row-title").hover(function(){
-
-    
-
+        if($(".row-title-back").is(":hidden")){
+          $(".row-title-back").slideDown("slow");
+        } 
+    }, function(){
+      if($(".row-title-back").is(":hidden")){
+          $(".row-title-back").slideDown("slow");
+        } else {
+          $(".row-title-back").slideUp("slow");
+        }
    });
 });
