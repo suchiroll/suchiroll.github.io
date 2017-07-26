@@ -127,9 +127,10 @@ h1:hover{
 }
 
 .bg10{
-	display:inline-block;
+	text-align: left;
 	height: 300px;
 	background-color: var(--yellow-color);
+	overflow: hidden;
 }
 .bg10 .title{
 	display:inline-block;
@@ -142,7 +143,26 @@ h1:hover{
 	height: 200px;
 }
 
+.heythere, .social{
+	margin-top: 30px;
+	height: 150px;
+	width: 150px;
+	background-color: var(--blue-color);
+	display: inline-block;
+color: var(--bg-color-dark);
+	vertical-align: top;
+	 box-shadow: 1px 1px 5px #888888;
+	 text-align: center;
+	 	font-size: 30px;
+}
+.letstalk, .more{
+	color: var(--bg-color-dark);
+	font-size: 40px;
+	font-family: 'Open Sans Light', sans-serif;
+}
+
 .form{
+	vertical-align: top;
 	margin-top: 10px;
 	padding-top:10px;
 	text-align: left;
@@ -152,8 +172,7 @@ h1:hover{
 	text-transform: lowercase;
 	display: inline-block;
 	padding-left: 10px;
- 	margin-left: auto;
- 	margin-right: auto;
+ 	margin-left: 50px;
 
 }
 
@@ -258,10 +277,13 @@ textarea{
 }
 
 .row-title-back{
+	text-align: right;
 	height: 100%;
 	width: 100%;
 	background-color: var(--blue-color);
-	
+	display: none;
+	box-shadow: 1px 1px 5px #888888;
+	color: var(--bg-color-dark);
 }
 
 .row-title-odd{
