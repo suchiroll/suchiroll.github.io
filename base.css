@@ -1,1 +1,399 @@
-body{height:100%;width:100%;margin:0;padding:0;font-family:'Roboto Condensed', sans-serif;background-color:#e2e2e0}.navbar{background-color:#e2e2e0;border:none}.navbar a{text-decoration:none;color:#b7b3b2}.navbar a:hover{color:#93CCC6}p{font-family:'Raleway', sans-serif}.wrapper{width:86%;margin-left:auto;margin-right:auto}.section{padding-top:50px;width:100%;margin:0px;background-color:#e2e2e0}.section-header{height:580px;background-color:#e2e2e0;padding-right:0px;padding-left:0px}.section-header h1{font-size:70px;line-height:10px}.section-header .subtitle{font-size:20px;font-family:'Raleway', sans-serif}.section-about{height:400px;text-align:right}.section-experience{height:700px}.section-experience .image{float:right}.section-experience .info{text-align:left}.section-skills{height:700px}.section-skills .info{width:100%;text-align:center}.section-projects{height:500px}.section-projects .image{float:right}.section-projects .info{text-align:left}.section-extras{height:450px}.section-extras .image{float:left}.section-extras .info{text-align:right}.section-contact{height:750px}.section-contact .info{width:100%;margin-left:auto;margin-right:auto}.section-image{height:auto;width:35%;display:inline-block}.section-info{height:auto;width:55%;display:inline-block;padding-left:20px}.section-info h2{font-size:60px}.img{width:100%}.about-image{float:left}.skill-table .col{text-align:center;display:inline-block;width:30%}.skill-table .skill-img{height:100px;width:100px}li{list-style-type:none;font-family:'Raleway', sans-serif}form{padding-top:25px;line-height:25px;font-family:'Raleway', sans-serif}textarea,input{padding:10px;background-color:#e2dddc;border:none;width:300px}textarea{height:150px}.send{background-color:#b7b3b2;color:#fff;border:none;font-family:'Roboto', sans-serif;width:55px;padding:5px}.send:hover{background-color:#93CCC6}.sect{text-align:center;position:top;height:750px;width:47%;display:inline-block;overflow:hidden}
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+@import url("https://fonts.googleapis.com/css?family=Oswald|Slabo+27px");
+/* line 13, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Slabo 27px', sans-serif;
+  background-color: #f9f9f7;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+/* line 24, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.navbar {
+  background-color: #f9f9f7;
+  border: none;
+  padding-top: 5px;
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* line 30, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.navbar a {
+  text-decoration: none;
+  color: #b7b3b2;
+}
+
+/* line 34, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.navbar a:hover {
+  color: #f98511;
+}
+
+/* line 41, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+p {
+  display: inline;
+  line-height: 1.6;
+  font-family: 'Slabo 27px', sans-serif;
+  font-size: 18px;
+}
+
+/* line 47, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.wrapper {
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 54, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.letsgo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  height: 45px;
+  font-size: 25px;
+  padding-top: 2px;
+  background: linear-gradient(#db542b, #ce4921);
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 200px;
+  z-index: 50;
+  border-radius: 25px;
+}
+
+/* line 55, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.letsgo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 74, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.letsgo:hover {
+  background: linear-gradient(#f98511, #ea7b0b);
+}
+
+/* line 79, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section {
+  padding-top: 20px;
+  width: 100%;
+  margin: 0px;
+  background-color: #f9f9f7;
+}
+
+/* line 84, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section #insta {
+  color: #f98511;
+}
+
+/* line 89, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-header {
+  height: 700px;
+  background-color: #f9f9f7;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* line 95, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-header h1 {
+  font-family: 'Roboto Condensed',sans-serif;
+  opacity: .87;
+  font-size: 65px;
+  line-height: 10px;
+}
+
+/* line 102, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-header .subtitle {
+  font-size: 26px;
+  font-family: 'Slabo 27px', serif;
+  opacity: .54;
+}
+
+/* line 110, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-about {
+  padding-top: 40px;
+  height: 500px;
+  text-align: right;
+}
+
+/* line 116, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-experience {
+  height: 1100px;
+}
+
+/* line 118, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-experience .image {
+  float: right;
+}
+
+/* line 121, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-experience .info {
+  padding-right: 20px;
+  text-align: left;
+}
+
+/* line 127, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-skills {
+  height: 900px;
+}
+
+/* line 129, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-skills .info {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 136, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-projects {
+  height: 1150px;
+}
+
+/* line 138, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-projects .image {
+  float: right;
+}
+
+/* line 141, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-projects .info {
+  padding-right: 20px;
+  text-align: left;
+}
+
+/* line 147, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-extras {
+  height: 450px;
+}
+
+/* line 149, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-extras .image {
+  float: left;
+}
+
+/* line 152, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-extras .info {
+  padding-left: 20px;
+  text-align: right;
+}
+
+/* line 159, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-contact {
+  height: 750px;
+}
+
+/* line 161, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-contact .info {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 168, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-image {
+  height: auto;
+  width: 35%;
+  display: inline-block;
+}
+
+/* line 174, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-info {
+  height: auto;
+  width: 55%;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+/* line 180, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-info h2 {
+  color: #db542b;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 45px;
+  opacity: .87;
+}
+
+/* line 187, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-info p {
+  opacity: 0.54;
+}
+
+/* line 191, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-info h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 25px;
+  opacity: .75;
+}
+
+/* line 197, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.section-info h4 {
+  color: #f98511;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  opacity: .75;
+}
+
+/* line 208, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.img {
+  width: 100%;
+}
+
+/* line 214, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.about-image {
+  float: left;
+}
+
+/* line 221, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.skill-table .col {
+  vertical-align: top;
+  text-align: center;
+  display: inline-block;
+  width: 25%;
+  height: 650px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 230, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.skill-table .skill-img {
+  height: 90px;
+  opacity: .75;
+}
+
+/* line 236, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+li {
+  list-style-type: none;
+  font-family: 'Raleway', sans-serif;
+}
+
+/** WHAT I'VE DONE **/
+/* line 244, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.button-wrap {
+  text-align: center;
+  margin-left: 100px;
+  margin-bottom: 25px;
+}
+
+/* line 248, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.button-wrap .source {
+  display: inline-block;
+  width: 240px;
+  height: 80px;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* line 254, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.button-wrap .source p {
+  font-size: 14px;
+  font-family: 'Roboto Medium', sans-serif;
+  opacity: .87;
+}
+
+/* line 263, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.src-front, .src-back {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 5px;
+  top: 0px;
+  position: absolute;
+  z-index: 2;
+  width: 120px;
+  height: 40px;
+}
+
+/* line 276, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.src-front {
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #db542b;
+  background-color: #f9f9f7;
+}
+
+/* line 284, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.src-back {
+  color: #fff;
+  background-color: #db542b;
+}
+
+/* line 289, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+form {
+  padding-top: 25px;
+  line-height: 25px;
+  font-family: 'Roboto Light', sans-serif;
+}
+
+/* line 295, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+textarea, input {
+  padding: 10px;
+  background-color: #e8e8de;
+  border: none;
+  width: 300px;
+}
+
+/* line 302, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+textarea {
+  height: 150px;
+}
+
+/* line 307, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.send {
+  background: linear-gradient(#db542b, #ce4921);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-family: 'Roboto', sans-serif;
+  width: 100px;
+  padding: 5px;
+}
+
+/* line 316, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.send:hover {
+  background: linear-gradient(#f98511, #ea7b0b);
+}
+
+/* line 321, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.sect {
+  text-align: center;
+  position: top;
+  height: 750px;
+  width: 47%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/** ICONS **/
+/* line 331, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 335, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.socialicon {
+  margin: 10px;
+  padding: 15px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/* line 344, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.socialicon:hover {
+  color: #fff;
+  background-color: #db542b;
+  border-radius: 10px;
+}
+
+/* line 351, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
+.iconcredit {
+  opacity: .5;
+  font-size: 8px;
+}
+
+/*# sourceMappingURL=../out/base.map */
