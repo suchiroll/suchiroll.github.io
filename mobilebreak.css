@@ -6,10 +6,17 @@
 } 
 @media all and (max-width: 605px) { 
 	body, html{
+		
 		text-align: center;
 		width: 100%;
-		height: 100%;
+	
 	}
+
+	body{
+		overflow-x: hidden;
+	}
+
+
 	.section-image{
 		display: block;
 		width: 100%;
@@ -43,7 +50,7 @@
 	}
 
 	#skills{
-		height: 1600px;
+		height: 1350px;
 	}
 
 	.skill-table .col{
@@ -51,22 +58,26 @@
 	}
 
 	.skill-table .lang{
-		height: 400px;
+		height: 350px;
 	}
 	.skill-table .classes{
-		height: 600px;
+		height: 500px;
 	}
 
 	.skill-table .certs{
-		height: 400px;
+		height: 300px;
 	}
 
 	#projects{
 		height: 1500px;
 	}
 
+	.proj-info{
+		text-align: center;
+	}
+
 	#extras{
-		height: 620px;
+		height: 650px;
 	}
 
 	#contact{
@@ -87,5 +98,13 @@
 
 	.navbar{
 		width: 100%;
+	}
+
+	.button-wrap{
+		margin-left: 0px;
+	}
+
+	.button-wrap .source{
+		display: block;
 	}
 }
