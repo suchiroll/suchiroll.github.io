@@ -70,6 +70,7 @@
 
 	#projects{
 		height: 1500px;
+
 	}
 
 	.proj-info{
@@ -77,11 +78,18 @@
 	}
 
 	#extras{
-		height: 650px;
+		height: 750px;
+	
+	}
+
+	.extra-info{
+		height: 300px;
+		text-align: center;
 	}
 
 	#contact{
 		height: 800px;
+		
 	}
 
 	#contact .sect{
@@ -105,6 +113,10 @@
 	}
 
 	.button-wrap .source{
+		display: block;
+	}
+
+	.section{
 		display: block;
 	}
 }
