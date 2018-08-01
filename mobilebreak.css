@@ -1,0 +1,91 @@
+@media all and (max-width: 1024px) { 
+
+} 
+@media all and (max-width: 839px) { 
+
+} 
+@media all and (max-width: 605px) { 
+	body, html{
+		text-align: center;
+		width: 100%;
+		height: 100%;
+	}
+	.section-image{
+		display: block;
+		width: 100%;
+	}
+	.section-info{
+		padding: 0px;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	#about{
+		height: 800px;
+	}
+
+	.section-header h1{
+		line-height: 1.0;
+	}
+
+	#home{
+		height: 750px;
+	}
+
+	#experience{
+		height: 1650px;
+	}
+
+	.exp-info{
+		text-align: center;
+		
+	}
+
+	#skills{
+		height: 1600px;
+	}
+
+	.skill-table .col{
+		width: 100%;
+	}
+
+	.skill-table .lang{
+		height: 400px;
+	}
+	.skill-table .classes{
+		height: 600px;
+	}
+
+	.skill-table .certs{
+		height: 400px;
+	}
+
+	#projects{
+		height: 1500px;
+	}
+
+	#extras{
+		height: 620px;
+	}
+
+	#contact{
+		height: 800px;
+	}
+
+	#contact .sect{
+		width: 100%;
+	}
+
+	.form{
+		height: 400px;
+	}
+
+	.social{
+		height: 400px;
+	}
+
+	.navbar{
+		width: 100%;
+	}
+}
