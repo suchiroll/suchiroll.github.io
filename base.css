@@ -124,12 +124,12 @@ p {
 }
 
 /* line 118, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
-.section-experience .image {
+.section-experience .exp-image {
   float: right;
 }
 
 /* line 121, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
-.section-experience .info {
+.section-experience .exp-info {
   padding-right: 20px;
   text-align: left;
 }
@@ -151,12 +151,12 @@ p {
 }
 
 /* line 138, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
-.section-projects .image {
+.section-projects .proj-image {
   float: right;
 }
 
 /* line 141, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
-.section-projects .info {
+.section-projects .proj-info {
   padding-right: 20px;
   text-align: left;
 }
@@ -172,7 +172,7 @@ p {
 }
 
 /* line 152, C:/Users/sucnat/Dropbox/resume site/in/base.scss */
-.section-extras .info {
+.section-extras .extra-info {
   padding-left: 20px;
   text-align: right;
 }
