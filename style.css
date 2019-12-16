@@ -108,8 +108,7 @@ p{
 
 #experience{
 	display: flex;
-	height: 900px;
-
+	height: 1100px;
 	justify-content: center;
 	align-items: center;
 }
@@ -377,7 +376,7 @@ textarea{
 	}
 
 	#experience{
-		height: 1800px;
+		height: 2200px;
 		flex-wrap: wrap;
 	}
 	.experience-item.section-info{
