@@ -69,7 +69,7 @@ p{
 	margin-left: 20px;
 }
 #home{
-	height: 800px;
+	height: 850px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -364,7 +364,7 @@ textarea{
 	}
 
 	#about{
-		height: 1000px;
+		height: 1200px;
 	}
 	.about-item{
 		flex: 0 1 100%;
@@ -387,7 +387,7 @@ textarea{
 		flex: 0 1 100%;
 	}
 	#skills{
-		height: 1200px;
+		height: 1300px;
 	}
 	.skills{
 		flex-wrap: wrap;
