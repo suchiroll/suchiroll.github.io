@@ -250,6 +250,10 @@ padding-bottom: 30px;
 	right: 0;
 }
 
+.links{
+	color: white !important;
+}
+
 .material-icons{
 	font-size: 18px !important;
 }
@@ -323,8 +327,13 @@ textarea{
 .icon-box img{
 	height: 50px;
 }
+@media only screen and (max-width: 1200px) {
+	#skills{
+		height: 600px;
+	}
+}
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 920px) {
 	.body-wrapper{
 		width: 90%;
 	}
@@ -343,6 +352,7 @@ textarea{
 		flex: 0 1 100%;
 		width: 400px;
 		height: 400px;
+		 background-position:center center;
 	}
 
 	#name{
@@ -361,6 +371,8 @@ textarea{
 		flex: 0 1 100%;
 	}
 	.section-image{
+
+		background-position: center center;
 		max-height: 500px;
 	}
 
