@@ -364,7 +364,7 @@ textarea{
 	}
 
 	#about{
-		height: 1200px;
+		height: 1300px;
 	}
 	.about-item{
 		flex: 0 1 100%;
@@ -376,7 +376,7 @@ textarea{
 	}
 
 	#experience{
-		height: 2200px;
+		height: 2500px;
 		flex-wrap: wrap;
 	}
 	.experience-item.section-info{
