@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta name="referrer" content="origin">
+		<meta charset= "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"> </script>
+      <script src="https://kit.fontawesome.com/b4669b7ca9.js" crossorigin="anonymous"></script>
+      <script src="jsondump.js"></script>
+</head>
+
+<body>
+  <div class ="wrapper" id = "app">
+    <div class = "header"> 
+      <h2> Events in {{cityFilter}} </h2> 
+      <div class ="select-wrap">
+      <select v-model="cityFilter" >
+              <option value="All Cities"> Cities </option>
+              <option v-for="item in cities"> {{item}} </option> 
+      </select>
+      </div>
+      <div class="select-wrap">
+      <select class = "sort" v-model="currentOrder" >
+              <option value ="DateVal"> Date </option> 
+              <option value = "MinPrice"> Price </option>
+      </select>
+  </div>
+    </div>
+    <div class = "event-wrapper">
+      <div class = "event" v-for="item in filteredEvents(items, cityFilter, currentOrder)"  v-bind:key="item.EventId">
+        <div class ="inner-wrap">
+        <div class = "event-image"> <div class ="event-price"> <p class = "price"> {{item.MinPrice}} </p> <p class="price-subhead"> per seat </p> </div></div>
+       <h3> {{ item.EventName }} </h3> 
+       <div class = "event-description"> <h4> at {{item.VenueName}}, {{item.VenueCity}}  </h4>
+        <h5 style="opacity: .85; color: #1eb0ee; "> <i class="far fa-calendar"></i> {{item.Date}} <i class="far fa-clock"></i> {{item.Time}}</h5>
+        <p style="opacity: .65"> {{item.VenueDescription}} </p> </div>
+      </div>
+        <div class = "event-btn"> <a v-bind:href="item.EventUrl"> BUY TICKETS </a> </div> 
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<style>
+  body{
+    font-family: 'Roboto', sans-serif;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 750px;
+    padding: 0px;
+    margin: 0px;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  .wrapper{
+    max-width: 800px;
+    margin-top: 0px;
+    background-color: white;
+    padding: 50px 35px 35px 35px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header{
+    width: 100%;
+  }
+  .event-wrapper{
+    margin-top:30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .event{
+    flex: 0 45%;
+    margin: 0px 10px 30px 10px;
+  }
+  .event-image{
+    background: linear-gradient( rgb(48, 52, 74, .7), rgba(0, 0, 0, 0.6) ), url('thumbnail.jpg');
+    height: 125px;
+    width: 100%;
+    background-size: cover;
+  }
+  .event-price{
+    padding: 50px 10px 2px 10px;
+    color: white;
+    width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .event-price .price{
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 1.6em;
+  }
+  .event-price .price-subhead{
+    margin-bottom: 0px;
+    font-size: .8em;
+  }
+  .event-btn{
+    font-size: 12px;
+    width: 100%;
+    border: 0px;
+    background-color: #30344a;
+    color: #fafafa;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 0px;
+    transition: .3s;
+    overflow: hidden;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+    border-top: 2px #8cc63f solid;
+    border-radius: 0px 0px 2px 2px;
+  }
+  .event:hover .event-btn{
+    padding: 12px 0px 5px 0px;
+    height: 20px;
+  }
+
+  .event-btn:hover{
+    background-color: #1eb0ee;
+  }
+  .event-description{
+    padding: 0px 15px 0px 10px;
+  }
+  h3, h4, h5,p{
+    margin-top: 0px;
+  }
+
+  h3, h4, h5{
+    margin-bottom: .45em;
+  }
+  h3{
+    background-color:#8cc63f;
+    color: white;
+    padding: 7px;
+
+  }
+  .select-wrap{
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    width: 150px;
+    height: 34px;
+    border-radius: 3px;
+    overflow: hidden!important;
+    background: url('arrow.png') 90% / 10% no-repeat;
+    vertical-align: top;
+  }
+  
+  select{
+      background: transparent;
+     width: 150px;
+     font-size: 16px;
+     height: 34px; 
+    -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;  
+      margin-right: 60px;
+      overflow: hidden!important;
+      text-align: center;
+      border: none;
+  }
+
+  @media only screen and (max-width: 650px) {
+    .event{
+      flex: 0 100%;
+    }
+  }
+</style>
+<script>
+	var x = json;
+  function comparePrice(a,b){
+      return parseInt(a['MinPrice'].substring(1,)) > parseInt(b['MinPrice'].substring(1,)) ? 1 : -1;
+  };
+  function compareDate(a,b){
+      return a['DateVal'] > b['DateVal'] ? 1 : -1;
+  };
+  const app = new Vue({
+    el: '#app',
+    data: {
+      cityFilter: 'All Cities',
+      currentOrder: 'DateVal',
+      items: x['Items']
+    },
+    computed:{
+        cities: function(){
+            let arr = this.items.map(function(item){
+              return item['VenueCity'];
+            });
+            let val = new Set(arr);
+            return [...val].sort();
+        },
+        sortedPrice: function(){
+            return this.items.sort(comparePrice);
+        },
+        sortedDate: function(){
+            return this.items.sort(compareDate);
+        }
+    },
+    methods:{
+      filteredEvents: function (items, cityFilter, currentOrder) {
+        if(cityFilter === 'All Cities'){
+          if(currentOrder === 'DateVal'){
+            return this.sortedDate;
+          } else {
+            return this.sortedPrice;
+         }
+        } else {
+          if(currentOrder === 'DateVal'){
+            return this.sortedDate.filter(function(e){
+              return e['VenueCity'].indexOf(cityFilter) > -1;
+            });
+          } else {
+            return this.sortedPrice.filter(function(e){
+              return e['VenueCity'].indexOf(cityFilter) > -1;
+          });
+         }
+        }
+      }
+    }
+  })
+</script>
