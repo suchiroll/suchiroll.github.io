@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta name="referrer" content="origin">
+		<meta charset= "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id = "main">
+		<div id = "header">
+			 <span id="logo"> Stamp </span>
+			 <span id="nav-bar"> <a href = "#">  About </a> <a href = "#"> Integrations </a><a href = "#"> Pricing</a><a href = "#"> Contacts </a></span>
+			 <div id = "menu">
+			 	<div class="burger" onclick="toggleMenu(this)">
+				 	<div class = "bar"> </div> 
+				 	<div class = "bar"> </div> 
+				 	<div class = "bar"> </div> 
+			 	</div>
+			 	<div id="dropdown">
+			 		<div>  </div> 
+			 		<div> About </div> 
+				 	<div> Integrations </div> 
+				 	<div> Pricing </div> 
+				 	<div> Contacts </div> 
+			 	</div>
+			 </div>
+		</div>
+		<div id  = "container"> 
+			<div class="content" id="heading"> 
+				<h1> Simple Way to Organize Your Inspirations </h1>
+				<span> I think what motivates people is not great hate, but great love for other people. </span>
+			</div>
+			<div class="content" id="form">
+				<div id="cta">SIGN UP FOR FREE </div>
+				<form id="signup">
+					<div class="input-wrap" > <input value="Name"> </input> </div>
+					<div class="input-wrap" > <input value="E-mail">  </input> </div>
+					<div class="input-wrap" > 
+						<input type="password" id="password" value="Password"> </input> 
+						<i id="showpass" onclick="showPass()"> x </i> 
+					</div> 
+					
+				</form>
+				<button> Sign up > </button>
+
+				<div id="tos">By clicking 'Sign up' I agree to our <a href="#"> Terms of Service </a></div>
+			</div>
+		</div>
+		<div id = "footer"> 
+			 <span id="copyright">  © 2016 Stamp. All Rights Reserved </span>
+			 <span id="foot-nav"> <a href = "#">  CONTACT </a> <a href = "#"> HELP </a><a href = "#"> TERMS OF USE </a> <a href = "#"> PRIVACY POLICY </a>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	function toggleMenu(el){
+		el.classList.toggle("change");
+		document.getElementById('dropdown').classList.toggle("change");
+	}
+	function showPass(){
+		var x = document.getElementById("password");
+		  if (x.type === "password") {
+		    x.type = "text";
+		  } else {
+		    x.type = "password";
+		  }
+	}
+</script>
