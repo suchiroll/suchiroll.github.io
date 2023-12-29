@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5{
 	 margin-bottom: 0px;
 }
 h1, h2{
-	font-family: 'Abril Fatface', cursive;
+	font-family: 'Coolvetica', cursive;
 	letter-spacing: 1px;
 }
 h1{
@@ -48,7 +48,7 @@ p{
 	 font-size: 18px;
 }
 .body-wrapper{
-	width: 80%;
+	width: 1200px;
 	margin-left: auto;
 	margin-right:auto;
 }
@@ -70,20 +70,16 @@ p{
 	font-size: 18px;
 }
 #home{
-	height: 850px;
+	height: 650px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-left: 7%;
+
 }
 
 .header-img{
-	height:80%;
-	background-image: url('header.png');
-	flex: 0 1 60%;
-	background-size: contain ;
-  	background-repeat: no-repeat;
-  	max-height: 800px;
+	width: 550px;
+	height: auto;
 }
 
 #name{
@@ -251,7 +247,11 @@ padding-bottom: 30px;
 }
 
 .links{
-	color: white !important;
+	margin-top: 10px;
+}
+
+.links a:nth-child(2){
+	margin: 0px 10px;
 }
 
 .material-icons{

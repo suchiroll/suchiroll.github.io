@@ -10,51 +10,29 @@
 		<link href="style.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-		<script>
-			$(document).ready(function(){
-			  // Add smooth scrolling to all links
-			  $("a").on('click', function(event) {
-			    if (this.hash !== "") {
-			      event.preventDefault();
-			      var hash = this.hash;
-			      $('html, body').animate({
-			        scrollTop: $(hash).offset().top
-			      }, 1000, function(){
-			        window.location.hash = hash;
-			      });
-			    } 
-			  });
-			});
-		</script>
+
 </head>
 <body>
-<nav class = "navbar navbar-inverse navbar-fixed-top navigation">
-	<div class = "container">
-		<div class = "navbar-header">
-			<a   href="#home"> suchitra natarajan &middot </a>
-			<a   href="#about"> about  &middot  </a>
-			<a   href="#experience"> experience &middot  </a>
-			<a   href="#skills"> skills &middot </a>
-			<a   href="#projects"> projects &middot </a>
-			<a   href="#contact"> contact &middot </a>
-			<a   href="https://www.linkedin.com/in/suchitranatarajan/"> linkedin </a>
-		</div>
-	</div>
-</nav>
-
 
 <div class = "body-wrapper">
 	<div id="home" class="section bg1 section-header">
 		<div id = "name">
 		 <h1> Hey there! </h1> 
 		 <h3> I'm Suchi Natarajan, welcome to my website! </h3>
+		 <div class="links">
+		 <a href="https://suchiroll.github.io"> Github </a> 
+
+		 <a href="https://www.linkedin.com/in/suchitranatarajan/"> LinkedIn </a> 
+
+		 <a href="Resume.pdf"> Resume </a>
 		</div>
-		<div class = "header-img"> </div>
+		</div>
+		<img class="header-img" src="header.png"> 
 </div>
 
 <div id="about" class="section bg2   section-about">
 	<div class = "about-item section-info"> 
-		<h2> First Things First </h2>
+		<h2> First things first </h2>
 		<p> Hello! Welcome, welcome, get yourself comfortable, leave your shoes by the door. I'm Suchitra Natarajan, frequently known around the block as "Suchi". You can normally catch me going to work, attending local concerts, or walking my wiener dog Quincy, who you can follow over at his Instagram, <a id = "insta" href = "https://www.instagram.com/quincy_dachshund/" target = "_blank">located here.</a> I'm a hands-on frontend developer with experience in a number of web frameworks and design tools. I'm skilled in problem solving through open communication, data analysis, creative design, agile programming and teamwork and I've worked on a number of eCommerce, B2B Marketing and Digital Demand Orchestration projects.
 		<p> Beyond programming, I'm passionate about art, design, and music. I'm somewhat of a connoisseur in bad movies and I love the weird and unexplained. I'm also an expert in Mario Kart: Double Dash. Feel free to contact me to chat! </p>
 	</div>
@@ -64,10 +42,15 @@
 <div id="experience" class="section bg3   section-experience">
 	<div class = "experience-item section-image"> </div>
 	<div class = " experience-item section-info"> 
-		<h2>Where I've Been </h2>
+		<h2>Where I've been </h2>
+	<div class = "work-div">
+			<h3> Web Developer  </h3>
+			<h4> Ethyca &middot MAR 2020 - CURRENT</h4>
+			<p> Ethyca provides data privacy automation for leading organizations, like The New York Times. Had sole ownership and responsibility for brand website and documentation site development and maintenance. Architected and maintained marketing funnel automation across Hubspot, Salesforce.com, and Outreach to ensure pipelines from Marketing to Sales. Had responsibility for data collection, site analytics, and performance testing, including configuring Google Analytics and A/B testing tools. SEO optimization on site, assessing and strategizing using Google Search Console. Primarily develops in Next.js, but has incorporated solutions with Wordpress and GraphQL, as well as providing design support in Figma. </p>
+		</div>
 		<div class = "work-div">
 			<h3> Frontend Developer  </h3>
-			<h4> Idio &middot JAN 2019 - CURRENT</h4>
+			<h4> Idio &middot JAN 2019 - JAN 2020</h4>
 			<p> Idio provides AI-driven digital demand acceleration to large businesses. Developed customized frontend extensions and applications for clients invoking Idio’s Demand Orchestration services REST APIs on AWS. Worked closely with the local client-facing solutions team and the UK-based backend engineering team to provide tailored web experiences for a wide variety of clients including major Wall Street institutions (e.g., Citi, Crain), IT providers (e.g., IBM, SalesForce, HP) and a number of other industries. Provided technical support and expertise to post-sales.</p>
 		</div>
 		<div class = "work-div">
@@ -94,127 +77,8 @@
 </div>
 </div>
 
-<div id="skills" class="section bg4   section-skills">
-	<div class = "info section-info"> 
-		<h2 style="color: white; margin-left: 20px; opacity: .8;"> Things I'm Good At  </h2>
-		<div class = "skills">
-			<div class = "skill-item">
-				<h3> PROGRAMMING </h3>
-				<h4> LANGUAGES </h4>
-				<p> <span class="highlighted"> JavaScript, jQuery, HTML/CSS,</span> Angular, Vue, React.js, Node.js, Python </p>
-				<h4> TOOLS </h4>
-				<p> <span class="highlighted"> Wordpress, </span> Eclipse, Docker, Hadoop, <span class="highlighted"> Git, </span>  Heroku, Unity3D</p>
-			</div>
-			<div class = "skill-item">
-				<h3> RELATED COURSES </h3>
-					<h4> TECHNICAL </h4>
-					<p> Cognitive Science, <span class="highlighted"> Data Structures, </span> Computer Architecture, Discrete Structures I & II, Linear Algebra, Information Technology & Informatics, Retrieving and Evaluating Electronic Information, Information Security, Network and Internet Technology, <span class="highlighted"> Advanced Web Design, Data Science,  Database and Information Processing </span> </p>
-					<h4> OTHER </h4>
-					<p> <span class="highlighted"> Management of Technological Organizations, </span> Social Informatics, E-Commerce, Game Design Methodology, <span class = "highlighted">Creative Writing </span> </p>
-			</div>
-			<div class = "skill-item">
-				<h3> DESIGN </h3>
-				<h4> TOOLS </h4>
-				<p> <span class="highlighted"> Adobe Suite (Photoshop/Illustrator/After Effects/Fresco), </span> Microsoft Suite (Word/Publisher), <span class="highlighted">  Sketch, </span> Blender, <span class="highlighted"> Procreate </span></p>
-				<h4> PERSONAL </h4>
-				<p> <span class="highlighted"> Effective communicator, </span> Fast and adaptable, Detail oriented, <span class="highlighted"> Team oriented </span> 
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
 
 
-<div class = "body-wrapper">
-<div id="projects" class="section bg5 section-projects">
-	<div class = "projects-item section-info"> 
-			<h2> What I've Done </h2>
-		<div class = "projects-div">
-			<div class = "projects-front">
-				<h3> Personal Site </h3>
-				<h4> HTML/CSS (Flexbox), JavaScript</h4>
-				<p> A lightweight, responsive website to display my resume. </p>
-			</div>
-			<div class = "projects-back"> 
-				<div class = "link-box"> 
-					<ul>
-						<a href = "https://github.com/suchiroll/suchiroll.github.io"> <li class = "links"> <i class="material-icons">code</i> Source </li> </a>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class = "projects-div">
-			<div class = "projects-front">
-				<h3> Resume Site </h3>
-				<h4> HTML/CSS, JavaScript</h4>
-				<p> A website featuring free downloadable resume sites I designed. </p>
-			</div>
-			<div class = "projects-back"> 
-				<div class = "link-box"> 
-					<ul>
-						<a href = "http://freepersonal.site/"> <li class = "links"> <i class="material-icons">link</i>  Link </li> </a>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class = "projects-div">
-			<div class = "projects-front">
-				<h3> Design Storefront </h3>
-				<h4> Adobe Illustrator, ProCreate, GIMP</h4>
-				<p> A storefront on Society6 that features stickers and other products displaying custom designs.  </p>
-			</div>
-			<div class = "projects-back"> 
-				<div class = "link-box"> 
-					<ul>
-						<a href = "https://society6.com/sucnat"> <li class = "links"> <i class="material-icons">link</i> Link </li></a>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class = "projects-div">
-			<div class = "projects-front">
-				<h3> Basement Show Tracker</h3>
-				<h4> Wordpress, HTML/SCSS </h4>
-				<p> A website to track and display local band concerts, intergrating with local band's Soundcloud accounts. </p>
-			</div>
-			<div class = "projects-back"> 
-				<div class = "link-box">
-					<ul>
-						<a href = "https://github.com/suchiroll/basementshow"><li class = "links"> <i class="material-icons">code</i> Source </li></a>
-					</ul>
-				 </div>
-			</div>
-		</div>
-	</div>
-	<div class = "projects-item section-image"></div>
-</div>
-</div>
-<div id="contact" class="section bg7  section-contact">
-	<h2 style="color: white; margin-left: 10%"> Let's Chat! </h2>
-	<div class = "info section-info contact"> 
-		<div class = "sect form ">
-			<h3> Send me an email... </h3>
-			<div class = "form">
-				<form method="POST" action="http://formspree.io/sucnat@gmail.com">
-					<h4 class = "formhead" >your email</h4>
-					<input type="email" name="email" placeholder="Your email" required>
-					<h4 class = "formhead">what you have to say</h4>
-					<textarea name="message" placeholder="Your message" required></textarea>
-					<button type="submit" class = "send">SEND</button>
-				</form>
-			</div>
-		</div>
-		<div class = "sect social">
-			<h3> ....Or find me online! </h3>
-			<div class = "icon-box">
-				<a href="https://github.com/suchiroll"><img src="github-icon.png"></a>
-				<a href = "https://www.linkedin.com/in/suchitranatarajan/"> <img src="linkedin-icon.png"> </a>
-				<a href="https://www.instagram.com/suchiroll_art/"> <img src="instagram-icon.png"></a>
-			</div>
-		</div>
-
-	</div>
-</div>
 
 </body>
 <footer>
