@@ -122,18 +122,8 @@ p{
 	padding-left: 10px;
 	margin-top: 15px;
 	margin-bottom: 5px;
-  	transition: 0.3s;
 }
 
-.work-div:hover{
-	border-left: 10px #ef0078 solid;
-}
-
-.work-div:hover h4{
-	opacity: .8;
-	font-weight: 400;
-	color: #ff8d00 ;
-}
 
 
 #skills{
